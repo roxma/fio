@@ -404,6 +404,9 @@ struct thread_data {
 	 */
 	struct flist_head io_log_list;
 	FILE *io_log_rfile;
+	int io_log_type;
+	int io_log_blktrace_swap;
+	unsigned long long io_log_skipped_writes;
 	unsigned int io_log_current;
 	unsigned int io_log_checkmark;
 	unsigned int io_log_highmark;
